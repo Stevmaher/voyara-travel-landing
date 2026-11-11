@@ -1,0 +1,35 @@
+{
+  "name": "voyara",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VOYARA — Travel agency landing page (React + Tailwind + Parcel)",
+  "scripts": {
+    "dev": "parcel index.html --port 3000",
+    "start": "parcel index.html --port 3000",
+    "build": "rm -rf dist .parcel-cache && parcel build index.html --no-source-maps --public-url ./",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "framer-motion": "^14.12.0",
+    "lucide-react": "^1.71.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-jsonld": "^2.16.4",
+    "parcel": "^2.16.4",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
